@@ -6,5 +6,5 @@ module.exports = {
       'firebasestorage.googleapis.com'
     ],
   },
-  reactStrictMode: true,
+  // reactStrictMode: true,
 }
