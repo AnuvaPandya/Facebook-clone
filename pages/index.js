@@ -5,6 +5,7 @@ import Login from '../components/Login';
 
 export default function Home({ session }) {
   if(!session) return <Login />;
+  
   return (
     <div>
       <Head>
@@ -22,7 +23,7 @@ export default function Home({ session }) {
   )
 }
 
-export async function getServerSideprops(context){
+export async function getServerSideProps(context){
   // get the user
   const session = await getSession(context);
   return{
