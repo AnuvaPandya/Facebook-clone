@@ -8,4 +8,4 @@ function HeaderIcon({ Icon, active }) {
     )
 }
 
-export default HeaderIcon
+export default HeaderIcon;
