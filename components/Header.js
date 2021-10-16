@@ -11,7 +11,7 @@ function Header() {
     const [session] = useSession();
     const myLoader = ({ src }) => {
         return `${session.user.image}`; };
- 
+
 
     return (
         <div className='sticky top-0 z-50 bg-white flex items-center p-2 lg-px-5 shadow-md'>
@@ -49,7 +49,7 @@ function Header() {
                 <p className='whitespace nowrap font-semibold pr-3'>{session.user.name}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
-                <ChatIcon className='icon' />
+                <BellIcon className='icon' />
                 <ChevronDownIcon className='icon' />
                 console.log({session.user.image});
             </div>
