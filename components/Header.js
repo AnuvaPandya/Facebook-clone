@@ -9,6 +9,8 @@ import { session, signOut, useSession } from 'next-auth/client';
 
 function Header() {
     const [session] = useSession();
+    const myLoader = ({ src }) => {
+        return `${session.user.image}`; };
  
 
     return (
@@ -41,7 +43,7 @@ function Header() {
 
                 {/* Profile picture */}
                 <Image onClick={signOut} className='rounded-full cursor-pointer'  
-                src={'https://i.stack.imgur.com/l60Hf.png'} width={40} height={40} layout='fixed' />
+                loader={myLoader}  src={`${session.user.image}`} width='40' height='40' layout='fixed' />
 
                 
                 <p className='whitespace nowrap font-semibold pr-3'>{session.user.name}</p>
@@ -55,4 +57,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;

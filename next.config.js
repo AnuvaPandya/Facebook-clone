@@ -4,7 +4,7 @@ module.exports = {
       'links.papareact.com',
       'platform-lookaside.fbsbx.com',
       'firebasestorage.googleapis.com',
-      'i.stack.imgur.com/l60Hf.png'
+      'localhost:3000'
     ],
   },
   // reactStrictMode: true,
