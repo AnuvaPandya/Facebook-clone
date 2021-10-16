@@ -41,7 +41,7 @@ function Header() {
                 {/* Profile picture */}
                 <Image onClick={signOut} className='rounded-full cursor-pointer' src={session.user.image}  loader={myLoader} width={40} height={40} layout='fixed' />
 
-                <p className='whitespace nowrap font-semibold pr-3'>Anuva Pandya</p>
+                <p className='whitespace nowrap font-semibold pr-3'>{session.user.name}</p>
                 <ViewGridIcon className='icon' />
                 <ChatIcon className='icon' />
                 <ChatIcon className='icon' />
