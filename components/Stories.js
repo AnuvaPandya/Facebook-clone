@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Storycard from './Storycard';
 
 const stories =[
     {
@@ -30,8 +31,10 @@ const stories =[
 
 function Stories() {
     return (
-        <div className='fles justify-center'>
-            
+        <div className='fles justify-center space-x-3 mx-auto'>
+            {stories.map(story =>(
+                <Storycard key={story.src} name={story.name} src={story.src} profile={story.profile}/>
+            ))}
         </div>
     )
 }
